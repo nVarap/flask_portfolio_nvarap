@@ -21,9 +21,10 @@ def index():
 def stub():
     return render_template("stub.html")
 
-@app.route('/random/')  # connects /stub/ URL to stub() function
-def random():
-    return render_template("random.html")
+@app.route('/newpage/')  # connects /stub/ URL to stub() function
+def newpage():
+    return render_template("newpage.html")
+    
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
